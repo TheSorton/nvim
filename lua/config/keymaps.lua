@@ -17,5 +17,6 @@ local function map(mode, lhs, rhs, opts)
     vim.keymap.set(mode, lhs, rhs, opts)
   end
 end
+
 map("n", "<leader>tv", "<cmd>ToggleTerm size=40 direction=vertical<cr>", { desc = "Open terminal vertically" })
 map("n", "<leader>th", "<cmd>ToggleTerm size=20  direction=horizontal<cr>", { desc = "Open terminal horizontal" })
